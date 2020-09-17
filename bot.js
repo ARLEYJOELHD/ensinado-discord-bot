@@ -14,7 +14,10 @@ app.listen(process.env.PORT);
 const moment = require('moment');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+const { Util } = require('discord.js');
 bot.Discord = Discord;
+bot.Database = require('./database.js');
+bot.util = Util;
 
 
 //const Enmap = require("enmap");
@@ -22,7 +25,7 @@ const fs = require("fs");
 bot.fs = fs;
 //bot.mathjs = require("mathjs");
 
-bot.prefixo = 't.';
+//bot.prefixo = 'g.';
 
 /*  Carrega os códigos dos módulos: comandos e sistemas  */
 bot.pastas = {}; //vai associar um comando a uma paste

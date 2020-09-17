@@ -2,9 +2,9 @@ module.exports = async (bot) => { //faz algo qdo o bot liga
   console.log('!!! estou pronto para ser usado !!!\n  To de olho em '+bot.channels.cache.size+' canais (chats + calss)');
 
   const avatares = [
-    "avatar1",
-    "avatar2",
-    "avatar3"
+    "https://i0.wp.com/gamelogia.com.br/wp-content/uploads/2016/11/gamer.jpg?resize=1280%2C640&ssl=1",
+    "https://www.torredevigilancia.com/wp-content/uploads/2019/10/coringa-55.jpg",
+    "https://imagens.usp.br/wp-content/uploads/Campus-15-Foto-Marcos-Santos20101220_066.jpg"
   ] 
   
   const status = [
@@ -14,10 +14,10 @@ module.exports = async (bot) => { //faz algo qdo o bot liga
   ]
   
   const atividades = [
-     ["status1", "LISTENING"],
-     ["status2", "PLAYING"],
-     ["status3", "WATCHING"],
-     ["status4", "WATCHING"]//bot adicionar quantos quiser :V
+     ["Trap", "LISTENING"],
+     ["Minecraft", "PLAYING"],
+     ["Se inscreve", "WATCHING"],
+     ["Dá like", "WATCHING"]
     ];
   setInterval(async () => { // controlar o intervalo
     let i = Math.floor(Math.random() * atividades.length + 1) - 1
