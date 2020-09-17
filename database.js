@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect("mongodb+srv://TutorialBot:tutozin123@tutorial.ppdoy.mongodb.net/TutorialBot?retryWrites=true&w=majority", { userNewUrlParser: true, useUnifiedTopology: true}, (err) => {
+mongoose.connect("link", { userNewUrlParser: true, useUnifiedTopology: true}, (err) => {
   if(err) return console.log("Erro ao conectar no database!\n"+err)
     console.log("Conectado ao BANCO DE DADOS!")
 })
