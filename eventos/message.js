@@ -6,7 +6,7 @@ module.exports = async (bot, message) => { //cuida do evento de mensagens enviad
       "guild_id": message.guild.id
     })
     if(!serv) {
-      await new bot.Database.Guilda({
+      serv = await new bot.Database.Guilda({
         guild_id: message.guild.id,
         prefixo: "g.",
       }).save()
